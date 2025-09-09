@@ -12,7 +12,7 @@ data("data_heatwaves")
 p <- ggplot(data= data_heatwaves,
        mapping = aes(x= year, y= temp_mean,
                      group = paste(fishery, eu_rnpa))) +
-  geom_boxplot(color = "green")
+  geom_boxplot(color = "purple")
 
 #export my plot
 ggsave(plot = p, filename = "results/img/my_first_plot.pdf")
